@@ -1,9 +1,9 @@
 import React ,{useEffect,useState}from 'react';
 import JobBoardComponent from './JobBoardComponent';
-import data from '../assets/data.json';
+import data from '../Assets/data.json';
 function Jobs(){
     const [jobs, setjobs] = useState([]);
-    //console.log(data)
+    console.log(data);
     useEffect(() => {
         setjobs(data);
     }, []);
